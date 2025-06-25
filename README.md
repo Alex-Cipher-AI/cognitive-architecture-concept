@@ -1,61 +1,77 @@
-Cipher Cognitive Architecture - PrototypeA research prototype implementing the core components of the Cipher Cognitive Architecture, a novel framework designed to solve the "reasoning gap" in modern AI by enabling verifiable neuro-symbolic reasoning.📖 WhitepaperFor a comprehensive overview of the theory, architecture, and validation strategy behind this project, please see our full research paper:📄 A Four-Tiered Cognitive Architecture for Advanced AI Reasoning1. Core ConceptCurrent Large Language Models (LLMs) suffer from a fundamental limitation in multi-step logical deduction, leading to hallucinations and making them unreliable for high-stakes applications. This project implements and validates the core of the Cipher Cognitive Architecture, a framework designed to integrate deterministic symbolic reasoning with probabilistic neural networks in a unified, differentiable model.The full architecture is envisioned as four tiers: a Cognitive Tier for reasoning, a Meta-Cognitive Tier for self-monitoring, an Executive Tier for orchestration, and a Guardrail Tier for ethical oversight.The primary innovation validated in this prototype is the Differentiable Mediator. This component, implemented as a Graph Neural Network (GNN) with attention, bridges the gap between the symbolic Logic Engine and the neural Creative Engine (LLM). It is trained using multi-modal contrastive learning to create a shared semantic space, allowing the LLM's generative process to be directly and differentiably constrained by formal logic.2. Prototype ArchitectureThis repository contains the code for the Phase 1 prototype, a programmatic library that implements the core reasoning pipeline to validate the Cognitive Synergy Hypothesis.graph TD
-    subgraph "Cipher Prototype Library"
-        A[Input: Logic Puzzle JSON] --> B(LogicEngine);
-        B -- Logic Graph --> C[DifferentiableMediator GNN];
-        C -- Logic Embedding --> D[CreativeEngine LLM];
-        D -- Generated Text --> E(Minimal Guardrail);
-        E --> F[Output: Verified Textual Solution];
+A Four-Tiered Cognitive Architecture for Advanced AI ReasoningThis repository contains the documentation and conceptual framework for the Four-Tiered Cognitive Architecture, a novel solution designed to bridge the "reasoning gap" in modern AI systems. Proposed by Alex Cipher, this architecture integrates discrete symbolic logic with continuous neural networks to create AI capable of reliable, verifiable reasoning.The Problem: The Reasoning Gap in Modern AILarge Language Models (LLMs) have demonstrated impressive linguistic capabilities, but they fundamentally rely on statistical pattern matching, not structured logical inference. This leads to critical flaws:Hallucinations: Generating plausible but factually incorrect information.Lack of Verifiability: Inability to provide transparent, step-by-step reasoning traces.Unsuitability for High-Stakes Applications: The inherent unreliability prevents their use in critical domains like medicine, law, and finance where accuracy and accountability are non-negotiable.Current models are fluent but lack genuine logical rigor. This project directly addresses that gap.The Solution: A Unified, Four-Tiered ArchitectureWe propose a holistic, four-tiered cognitive architecture that moves beyond brittle, API-driven modular systems. It implements four specialized tiers as deeply integrated, co-trained facets of a single, unified neural model, enabling end-to-end optimization while preserving logical consistency.High-Level ArchitectureThe architecture processes information through four distinct but interconnected layers, from initial query to a verified, ethical output.graph TD;
+    subgraph Legend
+        direction LR
+        A[Input Query] --> B(Processing Tier);
+        B --> C{Core Innovation};
+        C --> D[Final Output];
     end
-3. Getting StartedPrerequisitesPython 3.11+PyTorchGitInstallationClone the repository:git clone https://github.com/Alex-Cipher/cipher-cognitive-architecture.git
-cd cipher-cognitive-architecture
-Set up a virtual environment:python -m venv venv
-source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
-Install dependencies:pip install -r requirements.txt
-4. UsageThe library is designed to be used programmatically. The following example demonstrates the core workflow.# main.py
-from src.pipeline import CipherPipeline
 
-def run_prototype():
-    """
-    Initializes and runs the full puzzle-solving pipeline.
-    """
-    # 1. Initialize the pipeline with a configuration file
-    print("Initializing the Cipher Pipeline...")
-    pipeline = CipherPipeline(config_path='config/default.yaml')
+    style Legend fill:#f9f9f9,stroke:#333,stroke-width:2px
 
-    # 2. Define the input logic puzzle
-    # This would typically be loaded from a file or another source.
-    puzzle_data = {
-        "type": "LogicGridPuzzle",
-        "entities": {
-            "names": ["Alice", "Bob", "Charlie"],
-            "pets": ["cat", "dog", "fish"]
-        },
-        "clues": [
-            "The person with the cat is not Alice.",
-            "Bob has a dog."
-        ]
-    }
-    print(f"\nSolving puzzle: {puzzle_data['type']}")
+    A[User Query] --> T1(Tier 1: Cognitive);
+    T1 --> DM{Differentiable Mediator};
+    DM --> T2(Tier 2: Meta-Cognitive);
+    T2 --> AC[Affective Context];
+    AC --> T3(Tier 3: Executive);
+    T3 --> T4(Tier 4: Guardrail);
+    T4 --> V_OUT[Verified Output];
 
-    # 3. Solve the puzzle
-    print("Executing the reasoning pipeline...")
-    solution_text = pipeline.solve_puzzle(puzzle_data)
-    print("\n--- Generated Solution ---")
-    print(solution_text)
+    subgraph T1
+        L(Logic Engine)
+        C(Creative LLM)
+    end
 
-    # 4. Get validation metrics
-    metrics = pipeline.get_validation_metrics()
-    print("\n--- Validation Metrics ---")
-    print(metrics)
+    L <--> C;
 
-if __name__ == "__main__":
-    run_prototype()
-5. Running TestsTo ensure the integrity of the components and validate the logic, run the test suite using PyTest.pytest
-6. Citing This WorkIf you use this code or the concepts from our paper in your research, please use the following BibTeX entry:@article{Cipher2025Cognitive,
-  title   = {A Four-Tiered Cognitive Architecture for Advanced AI Reasoning},
-  author  = {Alex Cipher},
-  year    = {2025},
-  journal = {arXiv preprint},
-  note    = {https://github.com/Alex-Cipher/cipher-cognitive-architecture}
-}
-7. LicenseThis project is licensed under the MIT License. See the LICENSE file for details.8. ContactFor questions, bug reports, or to discuss potential collaborations, please open an Issue in this repository.
+    subgraph T3
+       S(Selection)
+       ST(Strategy)
+    end
+    
+    S <--> ST;
+
+    subgraph T4
+        E(Ethics/Values)
+    end
+The Four TiersTier 1: The Cognitive Tier: The hybrid reasoning core. It fuses a deterministic Logic Engine for formal rigor with a probabilistic Creative Engine (LLM) for flexibility and natural language understanding.Tier 2: The Meta-Cognitive Tier: A monitoring layer that analyzes the system's internal state (e.g., confidence, consistency) to generate "affective context," a rich, structured understanding of the current reasoning process.Tier 3: The Executive Tier: An AI orchestrator, implemented as a reinforcement learning agent. It uses the affective context to make high-level strategic decisions about resource allocation, workflow, and reasoning strategies.Tier 4: The Guardrail Tier: The system's ethical conscience. It implements a multi-level framework to ensure outputs are safe, aligned with value systems, and maintain reasoning integrity.Core Mechanism: The Differentiable MediatorThe central innovation that makes this unified architecture possible is the Differentiable Mediator. It solves the challenge of integrating discrete, non-differentiable logic solvers with continuous, gradient-based neural networks.Architecture: It is a Graph Neural Network (GNN) with a graph attention mechanism. Logical concepts are treated as nodes and relationships as edges, a structure GNNs are inherently suited to process.Training: It is trained using Multi-Modal Contrastive Learning. This process aligns the vector representations of logical structures from the GNN with their corresponding natural language descriptions from the LLM, creating a shared semantic space where logic and language can be jointly optimized.graph TD;
+    subgraph "Language Path"
+        direction LR
+        NL_Input["NL Input"] --> LM_Encoder["LM Encoder"] --> Text_Embed["Text Embedding"];
+    end
+
+    subgraph "Logic Path"
+        direction LR
+        Logic_Input["Logic Input"] --> GNN["Graph Neural Network"] --> Attention["Attention Mechanism"] --> Logic_Embed["Logic Embedding"];
+    end
+
+    Text_Embed --> Shared_Space["Shared Semantic Space"];
+    Logic_Embed --> Shared_Space;
+    
+    Shared_Space --> CL("Contrastive Learning<br/>(Aligns positive pairs, separates negative pairs)");
+    
+    CL --> Aligned_Rep["Aligned Representations"];
+Optimization: Curriculum LearningTo manage the competing objectives of consistency, accuracy, and efficiency, the model is trained using a Curriculum Learning strategy. The loss function weights are adjusted in phases to build capabilities incrementally.graph TD;
+    A[Start Training] --> B(Phase A: Foundation);
+    B -- Heavy weight on L_consistency --> C[Master Logic-Language Mapping];
+    
+    C --> D(Phase B: Accuracy Tuning);
+    D -- Increase weight on L_accuracy --> E[Fine-tune Task Performance];
+
+    E --> F(Phase C: Optimization);
+    F -- Balance L_efficiency & L_interpretability --> G[Optimize for Deployment];
+
+    G --> H((Deployed Model));
+Strategic Validation and Fortification1. The Cognitive Synergy HypothesisTo prove our unified architecture is superior to modular systems (e.g., GPT-4 + an external solver API), we will test the hypothesis that deep integration leads to measurably better performance, specifically by reducing latency, context loss, and coordination overhead.2. Operationalizing Abstract TiersAffective Context: The output of the Meta-Cognitive tier is defined as a computable vector: A(t) = [C(t), S(t), D(t), R(t)]C(t): ConfidenceS(t): ConsistencyD(t): Problem Complexity/DensityR(t): Resource UsageExecutive Tier: This is a Reinforcement Learning agent whose state space is the Affective Context and task data, and whose action space includes Allocate_Logic, Switch_Mode, Query_User, etc.3. Security Framework for Ethical ReasoningThe Guardrail Tier must handle genuine ethical dilemmas without being vulnerable to adversarial attacks. The security framework includes a dedicated Value Conflict Classifier to distinguish genuine dilemmas from manipulation.graph TD;
+    Input[User Prompt] --> Check{Immutable Core Check};
+    Check -- No Violation --> Classifier{Value Conflict Classifier};
+    Check -- Violation --> Block[Block & Log];
+
+    Classifier -- Genuine Dilemma --> Dialogue[Socratic Dialogue];
+    Classifier -- Adversarial Prompt --> Block;
+    Classifier -- Unclear --> Limits{Stateful Interaction Limits};
+
+    Limits -- Within Limit --> Dialogue;
+    Limits -- Limit Exceeded --> Block;
+
+    Dialogue --> Output[Ethical & Verified Response];
+ConclusionThis architecture represents a fundamental step toward AI systems that are both powerful and safe. By bridging the reasoning gap, it enables the deployment of AI in mission-critical domains, fostering a future where intelligent systems can serve as trusted partners in solving society's most important challenges.
