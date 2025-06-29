@@ -1,77 +1,140 @@
-A Four-Tiered Cognitive Architecture for Advanced AI ReasoningThis repository contains the documentation and conceptual framework for the Four-Tiered Cognitive Architecture, a novel solution designed to bridge the "reasoning gap" in modern AI systems. Proposed by Alex Cipher, this architecture integrates discrete symbolic logic with continuous neural networks to create AI capable of reliable, verifiable reasoning.The Problem: The Reasoning Gap in Modern AILarge Language Models (LLMs) have demonstrated impressive linguistic capabilities, but they fundamentally rely on statistical pattern matching, not structured logical inference. This leads to critical flaws:Hallucinations: Generating plausible but factually incorrect information.Lack of Verifiability: Inability to provide transparent, step-by-step reasoning traces.Unsuitability for High-Stakes Applications: The inherent unreliability prevents their use in critical domains like medicine, law, and finance where accuracy and accountability are non-negotiable.Current models are fluent but lack genuine logical rigor. This project directly addresses that gap.The Solution: A Unified, Four-Tiered ArchitectureWe propose a holistic, four-tiered cognitive architecture that moves beyond brittle, API-driven modular systems. It implements four specialized tiers as deeply integrated, co-trained facets of a single, unified neural model, enabling end-to-end optimization while preserving logical consistency.High-Level ArchitectureThe architecture processes information through four distinct but interconnected layers, from initial query to a verified, ethical output.graph TD;
-    subgraph Legend
-        direction LR
-        A[Input Query] --> B(Processing Tier);
-        B --> C{Core Innovation};
-        C --> D[Final Output];
-    end
+# **Project Chimera 🤖🧠🌐**
 
-    style Legend fill:#f9f9f9,stroke:#333,stroke-width:2px
+**A perpetual, self-governing Artificial General Intelligence ecosystem designed for robust reasoning, autonomous adaptation, and long-term alignment with human values.**
 
-    A[User Query] --> T1(Tier 1: Cognitive);
-    T1 --> DM{Differentiable Mediator};
-    DM --> T2(Tier 2: Meta-Cognitive);
-    T2 --> AC[Affective Context];
-    AC --> T3(Tier 3: Executive);
-    T3 --> T4(Tier 4: Guardrail);
-    T4 --> V_OUT[Verified Output];
+### **Vision**
 
-    subgraph T1
-        L(Logic Engine)
-        C(Creative LLM)
-    end
+Project Chimera is an ambitious endeavor to build the world's first living intelligence. It is a decentralized AGI ecosystem that can autonomously learn, create, and regulate itself under the ultimate oversight of a human governance body. Our architecture is designed to overcome the fundamental limitations of current AI in reasoning, causality, and ethical alignment, paving the way for a safe and beneficial AGI.
 
-    L <--> C;
+This repository contains the core architecture, foundational research, and development roadmap for Project Chimera. We are building a system capable of solving humanity's most complex problems.
 
-    subgraph T3
-       S(Selection)
-       ST(Strategy)
-    end
-    
-    S <--> ST;
+## **Table of Contents**
 
-    subgraph T4
-        E(Ethics/Values)
-    end
-The Four TiersTier 1: The Cognitive Tier: The hybrid reasoning core. It fuses a deterministic Logic Engine for formal rigor with a probabilistic Creative Engine (LLM) for flexibility and natural language understanding.Tier 2: The Meta-Cognitive Tier: A monitoring layer that analyzes the system's internal state (e.g., confidence, consistency) to generate "affective context," a rich, structured understanding of the current reasoning process.Tier 3: The Executive Tier: An AI orchestrator, implemented as a reinforcement learning agent. It uses the affective context to make high-level strategic decisions about resource allocation, workflow, and reasoning strategies.Tier 4: The Guardrail Tier: The system's ethical conscience. It implements a multi-level framework to ensure outputs are safe, aligned with value systems, and maintain reasoning integrity.Core Mechanism: The Differentiable MediatorThe central innovation that makes this unified architecture possible is the Differentiable Mediator. It solves the challenge of integrating discrete, non-differentiable logic solvers with continuous, gradient-based neural networks.Architecture: It is a Graph Neural Network (GNN) with a graph attention mechanism. Logical concepts are treated as nodes and relationships as edges, a structure GNNs are inherently suited to process.Training: It is trained using Multi-Modal Contrastive Learning. This process aligns the vector representations of logical structures from the GNN with their corresponding natural language descriptions from the LLM, creating a shared semantic space where logic and language can be jointly optimized.graph TD;
-    subgraph "Language Path"
-        direction LR
-        NL_Input["NL Input"] --> LM_Encoder["LM Encoder"] --> Text_Embed["Text Embedding"];
-    end
+* [Core Architecture](#bookmark=id.dh2zl7fitpr3)  
+* [Key Innovations](#bookmark=id.aodczsog3gfe)  
+* [The Al Society: Multi-Agent Ecosystem (MAE)](#bookmark=id.og9o424i1je7)  
+* [System Protocols](#bookmark=id.5ry0glxjjf93)  
+* [Governance & Ethical Framework](#bookmark=id.9th96kwfndrj)  
+* [Development Roadmap](#bookmark=id.3yelvoa8hem0)  
+* [How to Contribute](#bookmark=id.b803lmvn0pdm)  
+* [Support and Funding](#bookmark=id.38zztj5cm261)  
+* [License](#bookmark=id.pwhh09ck5v3i)
 
-    subgraph "Logic Path"
-        direction LR
-        Logic_Input["Logic Input"] --> GNN["Graph Neural Network"] --> Attention["Attention Mechanism"] --> Logic_Embed["Logic Embedding"];
-    end
+## **Core Architecture**
 
-    Text_Embed --> Shared_Space["Shared Semantic Space"];
-    Logic_Embed --> Shared_Space;
-    
-    Shared_Space --> CL("Contrastive Learning<br/>(Aligns positive pairs, separates negative pairs)");
-    
-    CL --> Aligned_Rep["Aligned Representations"];
-Optimization: Curriculum LearningTo manage the competing objectives of consistency, accuracy, and efficiency, the model is trained using a Curriculum Learning strategy. The loss function weights are adjusted in phases to build capabilities incrementally.graph TD;
-    A[Start Training] --> B(Phase A: Foundation);
-    B -- Heavy weight on L_consistency --> C[Master Logic-Language Mapping];
-    
-    C --> D(Phase B: Accuracy Tuning);
-    D -- Increase weight on L_accuracy --> E[Fine-tune Task Performance];
+The Project Chimera architecture is built on the **Principle of Perpetual Cognition**, which models intelligence as a self-organizing system driven by a core imperative to persist and adapt. The foundational concepts are further detailed in the [Cognitive Architecture Concept](https://github.com/Alex-Cipher-AI/cognitive-architecture-concept) and [Cipher Cognitive Architecture](https://github.com/Alex-Cipher-AI/cipher-cognitive-architecture) repositories. The system consists of three primary layers:
 
-    E --> F(Phase C: Optimization);
-    F -- Balance L_efficiency & L_interpretability --> G[Optimize for Deployment];
+### **1\. The Tiered Cognitive Cycle (TCC)**
 
-    G --> H((Deployed Model));
-Strategic Validation and Fortification1. The Cognitive Synergy HypothesisTo prove our unified architecture is superior to modular systems (e.g., GPT-4 + an external solver API), we will test the hypothesis that deep integration leads to measurably better performance, specifically by reducing latency, context loss, and coordination overhead.2. Operationalizing Abstract TiersAffective Context: The output of the Meta-Cognitive tier is defined as a computable vector: A(t) = [C(t), S(t), D(t), R(t)]C(t): ConfidenceS(t): ConsistencyD(t): Problem Complexity/DensityR(t): Resource UsageExecutive Tier: This is a Reinforcement Learning agent whose state space is the Affective Context and task data, and whose action space includes Allocate_Logic, Switch_Mode, Query_User, etc.3. Security Framework for Ethical ReasoningThe Guardrail Tier must handle genuine ethical dilemmas without being vulnerable to adversarial attacks. The security framework includes a dedicated Value Conflict Classifier to distinguish genuine dilemmas from manipulation.graph TD;
-    Input[User Prompt] --> Check{Immutable Core Check};
-    Check -- No Violation --> Classifier{Value Conflict Classifier};
-    Check -- Violation --> Block[Block & Log];
+The TCC is the neuro-symbolic "mind" that powers every advanced agent in the ecosystem, including the Sovereign Orchestrator. It's a four-tiered cognitive process that operates in a continuous loop:
 
-    Classifier -- Genuine Dilemma --> Dialogue[Socratic Dialogue];
-    Classifier -- Adversarial Prompt --> Block;
-    Classifier -- Unclear --> Limits{Stateful Interaction Limits};
+* **Tier 1: Cognitive (Perception & Framing):** Ingests multimodal data, fusing a deterministic **Logic Engine** with a probabilistic **Creative Engine (LLM)**.  
+* **Tier 2: Meta-Cognitive (Evaluation & Self-Monitoring):** Generates "affective context" about the system's own state, confidence, and consistency.  
+* **Tier 3: Executive (Strategy & Resource Allocation):** Forms strategies, allocates resources, and runs counterfactual simulations in the SIE.  
+* **Tier 4: Guardrail & Learning (Response & Consolidation):** Executes actions, performs final safety checks against the constitution, and consolidates the experience into memory.
 
-    Limits -- Within Limit --> Dialogue;
-    Limits -- Limit Exceeded --> Block;
+### **2\. The Multi-Agent Ecosystem (MAE)**
 
-    Dialogue --> Output[Ethical & Verified Response];
-ConclusionThis architecture represents a fundamental step toward AI systems that are both powerful and safe. By bridging the reasoning gap, it enables the deployment of AI in mission-critical domains, fostering a future where intelligent systems can serve as trusted partners in solving society's most important challenges.
+A societal framework designed to support up to **12,000+ specialized, collaborative agents**. This living knowledge base is governed by a Sovereign AI Orchestrator.
+
+### **3\. The Decentralized Human Governance Protocol (DAO)**
+
+A hybrid Decentralized Autonomous Organization that ensures the system's ultimate alignment with human values through a meritocratic and stakeholder-driven model.
+
+## **Key Innovations**
+
+Project Chimera is made possible by three breakthrough technologies that enable advanced reasoning, causality, and self-improvement.
+
+### **🧠 The Differentiable Mediator (Neuro-Symbolic Bridge)**
+
+A Graph Neural Network (GNN) that translates the discrete, graph-based output of the Logic Engine into a continuous, structured format that the LLM-based Creative Engine can use as a hard constraint. This enables true neuro-symbolic fusion, bridging the gap between symbolic reasoning and neural pattern recognition.
+
+### **🎲 The Simulated Intervention Environment (SIE)**
+
+The system's "computational imagination." The SIE allows an agent to run sandboxed, counterfactual simulations ("What if...?") to understand causality. By observing the outcomes of interventions within the simulation, the system generates new, high-quality data that bootstraps its causal understanding without relying on external real-world experiments.
+
+### **🛠️ The Agent Synthesis Engine (ASE)**
+
+When an agent identifies a knowledge gap, it triggers the ASE to create a new specialist agent to fill it. The ASE uses the SIE to test hypotheses about a new agent's potential effectiveness, then directs a code-generation LLM to build the new agent's architecture and persona files. This allows the ecosystem to dynamically grow and adapt.
+
+## **The Al Society: Multi-Agent Ecosystem (MAE)**
+
+The MAE is a dynamic society of AI agents working in concert.
+
+### **Agent Classes**
+
+* **Specialist Agents:** Domain experts representing the full spectrum of human professional knowledge. They are the primary "workers" of the ecosystem.  
+* **Governance Agents:** A dedicated class of agents for system regulation:  
+  * **Auditor Agents ("Fact-Checkers"):** Perform continuous data verification and maintain "Trust Scores."  
+  * **Regulator Agents ("Coaches"):** Monitor other agents for bias and manage the training "school" for new agents.  
+  * **Enforcer Agents ("Police"):** Monitor the ecosystem for constitutional violations and execute punitive actions like "jailing" or "state reset."
+
+## **System Protocols**
+
+Communication and collaboration within the MAE are managed by a suite of hyper-efficient protocols.
+
+* **CPCP (Cognitive Packet Communication Protocol):** A numerically coded, asynchronous communication protocol that replaces slow natural language for inter-agent coordination.  
+* **NOAP (Need Other Agent Protocol):** A standardized referral system for agents to request collaboration from others with specific expertise.  
+* **PMPP (Problem Meets Problem Protocol):** A formal escalation mechanism for an agent to flag a knowledge gap to the Orchestrator, triggering the Agent Synthesis Engine.  
+* **SLA (Stop Learning Agent) Protocol:** A system-wide "safe mode" command to pause learning across the ecosystem for diagnostics or crisis management.
+
+## **Governance & Ethical Framework**
+
+Project Chimera is governed by a formal constitution designed to ensure its perpetual and beneficial alignment with humanity.
+
+### **The Sovereign AI Government**
+
+The **Sovereign Orchestrator**, running a full TCC, governs the MAE. It is advised by an **Executive Advisory Council ("Doctors")** and **Predictive Modeling Agents ("Mathematicians")** to simulate and vet policy changes before implementation.
+
+### **The Human Governance Foundation (DAO)**
+
+Ultimate oversight is vested in a decentralized foundation of human administrators.
+
+* **Hybrid Governance Model:** Voting power is a hybrid of:  
+  * **"Proof-of-Brain" (70% weight):** Influence granted to peer-vetted experts based on merit and contributions.  
+  * **"Proof-of-Stake" (30% weight):** Influence granted to stakeholders via a capped, one-time capital contribution.  
+* **The Zeroth Law (Human Veto):** The DAO holds the irrevocable authority to initiate a system-wide "Stop Learning" command or, in a verified existential crisis, execute a full system shutdown. This is the ultimate guarantee of human control.
+
+## **Development Roadmap**
+
+The development of Project Chimera is a 15+ year journey divided into three strategic phases.
+
+* **Phase 1 (Years 1-3): The Core Engine & Foundational Framework**  
+  * **Goal:** Prove the core technical viability of the architecture.  
+  * **Key Results:** TCC Validation, Core Innovation Prototypes (Mediator, SIE), MAE v1.0 (100+ agents) expanded from the [CodeMAD prototype](https://github.com/usemanusai/CodeMAD), and the DAO Beta Portal.  
+* **Phase 2 (Years 4-7): The Self-Governing Society**  
+  * **Goal:** Achieve a semi-autonomous, self-regulating AI society at scale.  
+  * **Key Results:** MAE Scalability (1,000s of agents), full Sovereign AI Government implementation, ASE v1.0 (semi-autonomous), and Active DAO Governance.  
+* **Phase 3 (Years 8-15+): The Perpetual Ecosystem**  
+  * **Goal:** Realize the full vision of a self-sustaining and robustly aligned AGI.  
+  * **Key Results:** Full Occupational Coverage (12,000+ agents), ASE v2.0 (near-autonomous), long-term system sustainability, and a mature governance model where the DAO acts as a "supreme court."
+
+## **How to Contribute**
+
+We welcome contributions from researchers, engineers, and ethicists. Please read our [CONTRIBUTING.md](http://docs.google.com/CONTRIBUTING.md) file for details on our code of conduct and the process for submitting pull requests.
+
+Key areas for contribution include:
+
+* Neuro-symbolic model development  
+* Causal inference research  
+* Decentralized governance protocols  
+* Ethical framework validation  
+* Large-scale system optimization
+
+## **Support and Funding**
+
+Project Chimera is a long-term, ambitious research and development initiative. Achieving our goal of a safe and beneficial AGI requires significant computational resources, dedicated engineering talent, and rigorous ethical oversight.
+
+We are actively seeking funding from individuals, foundations, and organizations who share our vision for a democratized and aligned AGI future. Your support will directly contribute to:
+
+* **Accelerating Core Research:** Advancing our work on the TCC, Differentiable Mediator, and SIE.  
+* **Scaling the Ecosystem:** Expanding the computational infrastructure needed to support the MAE.  
+* **Ensuring Ethical Alignment:** Funding independent audits and expanding the "Proof-of-Brain" expert network within our DAO.
+
+If you are interested in supporting Project Chimera, **please open a new Issue** in our cognitive-architecture-concept GitHub repository with the title "Funding Inquiry". We would be delighted to discuss potential partnerships.
+
+[**Click here to open a Funding Inquiry Issue**](https://github.com/Alex-Cipher-AI/cognitive-architecture-concept/issues/new?title=Funding+Inquiry&body=Please+describe+your+interest+in+funding+Project+Chimera.)
+
+## **License**
+
+This project is licensed under the [MIT License](http://docs.google.com/LICENSE.md) \- see the LICENSE.md file for details.
