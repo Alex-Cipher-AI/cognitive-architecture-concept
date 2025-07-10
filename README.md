@@ -1,140 +1,93 @@
-# **Project Chimera 🤖🧠🌐**
+<p align="center">
+<h1>Project Chimera</h1>
+<h3>A Blueprint for a Perpetual AGI Ecosystem</h3>
+</p>
 
-**A perpetual, self-governing Artificial General Intelligence ecosystem designed for robust reasoning, autonomous adaptation, and long-term alignment with human values.**
+<p align="center">
+<a href="#"><img src="https://www.google.com/search?q=https://img.shields.io/badge/Status-Conceptual%2520%2526%2520Prototyping-blue" alt="Status"></a>
+<a href="https://www.google.com/search?q=./02_Constitutional_Principles_%26_Ethical_Framework.pdf"><img src="https://www.google.com/search?q=https://img.shields.io/badge/License-AGI%2520Constitutional-lightgrey" alt="License"></a>
+<a href="#-the-complete-documentation-the-data-room"><img src="https://www.google.com/search?q=https://img.shields.io/badge/Documentation-Read%2520the%2520Docs-34a1bf" alt="Documentation"></a>
+</p>
 
-### **Vision**
+<p align="center">
+This repository contains the complete foundational work for <strong>Project Chimera</strong>, an integrated blueprint for a new form of intelligence. The project's goal is to move beyond powerful but brittle tools and cultivate a living, evolving intelligence. The vision is to create a perpetual AGI ecosystem that can autonomously learn, create, and regulate itself to solve humanity's most complex challenges, operating under the ultimate oversight of a decentralized, human-led body to ensure it always serves our collective long-term interests.
+</p>
 
-Project Chimera is an ambitious endeavor to build the world's first living intelligence. It is a decentralized AGI ecosystem that can autonomously learn, create, and regulate itself under the ultimate oversight of a human governance body. Our architecture is designed to overcome the fundamental limitations of current AI in reasoning, causality, and ethical alignment, paving the way for a safe and beneficial AGI.
+[!NOTE]
+The data displayed in the live prototypes is currently mocked for demonstration purposes. It serves to illustrate the functionality and data visualization capabilities of the final system.
 
-This repository contains the core architecture, foundational research, and development roadmap for Project Chimera. We are building a system capable of solving humanity's most complex problems.
+<p align="center">
+🌟 <strong>Star this repository to stay updated on the development of Project Chimera!</strong><br/><br/>
+<a href="https://www.google.com/search?q=https://github.com/Alex-Cipher-AI/cognitive-architecture-concept/stargazers">
+<img src="https://www.google.com/search?q=https://img.shields.io/github/stars/Alex-Cipher-AI/cognitive-architecture-concept%3Fstyle%3Dsocial" alt="GitHub Stars">
+</a>
+</p>
 
-## **Table of Contents**
+📺 Live Operational Prototype: The AI Orchestrator
+The concepts outlined in the documentation are not merely theoretical. A live, publicly accessible prototype of the AI Orchestrator dashboard is running. This demonstrates the foundational management, monitoring, and governance interface for the Project Chimera ecosystem.
 
-* [Core Architecture](#bookmark=id.dh2zl7fitpr3)  
-* [Key Innovations](#bookmark=id.aodczsog3gfe)  
-* [The Al Society: Multi-Agent Ecosystem (MAE)](#bookmark=id.og9o424i1je7)  
-* [System Protocols](#bookmark=id.5ry0glxjjf93)  
-* [Governance & Ethical Framework](#bookmark=id.9th96kwfndrj)  
-* [Development Roadmap](#bookmark=id.3yelvoa8hem0)  
-* [How to Contribute](#bookmark=id.b803lmvn0pdm)  
-* [Support and Funding](#bookmark=id.38zztj5cm261)  
-* [License](#bookmark=id.pwhh09ck5v3i)
+► Live Agent Orchestrator Dashboard
+This dashboard provides a real-time, high-level view of the entire Multi-Agent Ecosystem (MAE), tracking the health, status, and activity of all 12,000+ agents.
+<br>
+<a href="https://agentorchestrator-dashboard-zpw2m51.public.builtwithrocket.new">
+<img src="./image_166597.png" alt="Agent Orchestrator Dashboard" width="100%">
+</a>
+<br><br>
 
-## **Core Architecture**
+► Live AI Orchestrator Heatmap & Alerts
+This dashboard shows a more granular view of the system's operational status, including live alerts, agent status heatmaps, and critical safety controls like the "Emergency Stop" function.
+<br>
+<a href="https://ai-agent-orchestrator-dashboard-131tb56.public.builtwithrocket.new/">
+<img src="./image_14ee94.png" alt="AI Orchestrator Heatmap" width="100%">
+</a>
 
-The Project Chimera architecture is built on the **Principle of Perpetual Cognition**, which models intelligence as a self-organizing system driven by a core imperative to persist and adapt. The foundational concepts are further detailed in the [Cognitive Architecture Concept](https://github.com/Alex-Cipher-AI/cognitive-architecture-concept) and [Cipher Cognitive Architecture](https://github.com/Alex-Cipher-AI/cipher-cognitive-architecture) repositories. The system consists of three primary layers:
+✨ Key Architectural Concepts
+The power and safety of the system derive from its holistic nature. The core breakthroughs are not independent components but a synergistic, interlocking whole.
 
-### **1\. The Tiered Cognitive Cycle (TCC)**
+Tiered Cognitive Cycle (TCC): A novel neuro-symbolic engine that serves as the "mind" for every advanced agent, enabling robust reasoning and adaptation.
 
-The TCC is the neuro-symbolic "mind" that powers every advanced agent in the ecosystem, including the Sovereign Orchestrator. It's a four-tiered cognitive process that operates in a continuous loop:
+Simulated Intervention Environment (SIE): The system's "computational imagination," allowing it to understand causality by running "what-if" scenarios to bootstrap its own learning.
 
-* **Tier 1: Cognitive (Perception & Framing):** Ingests multimodal data, fusing a deterministic **Logic Engine** with a probabilistic **Creative Engine (LLM)**.  
-* **Tier 2: Meta-Cognitive (Evaluation & Self-Monitoring):** Generates "affective context" about the system's own state, confidence, and consistency.  
-* **Tier 3: Executive (Strategy & Resource Allocation):** Forms strategies, allocates resources, and runs counterfactual simulations in the SIE.  
-* **Tier 4: Guardrail & Learning (Response & Consolidation):** Executes actions, performs final safety checks against the constitution, and consolidates the experience into memory.
+Agent Synthesis Engine (ASE): A dynamic system that can create new, specialized AI agents to fill knowledge gaps, allowing the ecosystem to evolve and improve autonomously.
 
-### **2\. The Multi-Agent Ecosystem (MAE)**
+Hybrid "Proof-of-Brain" Governance: A decentralized human oversight model that prioritizes proven merit and expertise over capital, ensuring long-term alignment with human values.
 
-A societal framework designed to support up to **12,000+ specialized, collaborative agents**. This living knowledge base is governed by a Sovereign AI Orchestrator.
+📚 The Complete Documentation (The Data Room)
+The following documents provide the full strategic, technical, and ethical framework for Project Chimera. A phased reading in this order is recommended for a comprehensive understanding.
 
-### **3\. The Decentralized Human Governance Protocol (DAO)**
+Document
 
-A hybrid Decentralized Autonomous Organization that ensures the system's ultimate alignment with human values through a meritocratic and stakeholder-driven model.
+Description
 
-## **Key Innovations**
+00_Manifesto_for_Project_Chimera.pdf
 
-Project Chimera is made possible by three breakthrough technologies that enable advanced reasoning, causality, and self-improvement.
+The vision, the core philosophy, and the context for the entire project.
 
-### **🧠 The Differentiable Mediator (Neuro-Symbolic Bridge)**
+01_The_Cipher_Architecture_Blueprint.pdf
 
-A Graph Neural Network (GNN) that translates the discrete, graph-based output of the Logic Engine into a continuous, structured format that the LLM-based Creative Engine can use as a hard constraint. This enables true neuro-symbolic fusion, bridging the gap between symbolic reasoning and neural pattern recognition.
+The technical heart of the project, detailing the TCC, MAE, and core breakthroughs.
 
-### **🎲 The Simulated Intervention Environment (SIE)**
+02_Constitutional_Principles_&_Ethical_Framework.pdf
 
-The system's "computational imagination." The SIE allows an agent to run sandboxed, counterfactual simulations ("What if...?") to understand causality. By observing the outcomes of interventions within the simulation, the system generates new, high-quality data that bootstraps its causal understanding without relying on external real-world experiments.
+The supreme law of the AGI ecosystem and its ethical bedrock.
 
-### **🛠️ The Agent Synthesis Engine (ASE)**
+03_Product_Requirements_Document_(PRD).pdf
 
-When an agent identifies a knowledge gap, it triggers the ASE to create a new specialist agent to fill it. The ASE uses the SIE to test hypotheses about a new agent's potential effectiveness, then directs a code-generation LLM to build the new agent's architecture and persona files. This allows the ecosystem to dynamically grow and adapt.
+The functional specification, translating the blueprint into concrete requirements.
 
-## **The Al Society: Multi-Agent Ecosystem (MAE)**
+04_Phased_Development_&_Implementation_Roadmap.pdf
 
-The MAE is a dynamic society of AI agents working in concert.
+The strategic, 15-year plan from foundational R&D to a fully operational ecosystem.
 
-### **Agent Classes**
+05_Chimera_AGI_Competitive_Analysis.pdf
 
-* **Specialist Agents:** Domain experts representing the full spectrum of human professional knowledge. They are the primary "workers" of the ecosystem.  
-* **Governance Agents:** A dedicated class of agents for system regulation:  
-  * **Auditor Agents ("Fact-Checkers"):** Perform continuous data verification and maintain "Trust Scores."  
-  * **Regulator Agents ("Coaches"):** Monitor other agents for bias and manage the training "school" for new agents.  
-  * **Enforcer Agents ("Police"):** Monitor the ecosystem for constitutional violations and execute punitive actions like "jailing" or "state reset."
+An honest assessment of Project Chimera's novelty against the current state-of-the-art.
 
-## **System Protocols**
+🔗 Foundational Code & Repositories
+Technical Architecture Repository
 
-Communication and collaboration within the MAE are managed by a suite of hyper-efficient protocols.
+Contains more detailed specifications and work related to the core cognitive architecture.
 
-* **CPCP (Cognitive Packet Communication Protocol):** A numerically coded, asynchronous communication protocol that replaces slow natural language for inter-agent coordination.  
-* **NOAP (Need Other Agent Protocol):** A standardized referral system for agents to request collaboration from others with specific expertise.  
-* **PMPP (Problem Meets Problem Protocol):** A formal escalation mechanism for an agent to flag a knowledge gap to the Orchestrator, triggering the Agent Synthesis Engine.  
-* **SLA (Stop Learning Agent) Protocol:** A system-wide "safe mode" command to pause learning across the ecosystem for diagnostics or crisis management.
+Foundational Prototype (CodeMAD)
 
-## **Governance & Ethical Framework**
-
-Project Chimera is governed by a formal constitution designed to ensure its perpetual and beneficial alignment with humanity.
-
-### **The Sovereign AI Government**
-
-The **Sovereign Orchestrator**, running a full TCC, governs the MAE. It is advised by an **Executive Advisory Council ("Doctors")** and **Predictive Modeling Agents ("Mathematicians")** to simulate and vet policy changes before implementation.
-
-### **The Human Governance Foundation (DAO)**
-
-Ultimate oversight is vested in a decentralized foundation of human administrators.
-
-* **Hybrid Governance Model:** Voting power is a hybrid of:  
-  * **"Proof-of-Brain" (70% weight):** Influence granted to peer-vetted experts based on merit and contributions.  
-  * **"Proof-of-Stake" (30% weight):** Influence granted to stakeholders via a capped, one-time capital contribution.  
-* **The Zeroth Law (Human Veto):** The DAO holds the irrevocable authority to initiate a system-wide "Stop Learning" command or, in a verified existential crisis, execute a full system shutdown. This is the ultimate guarantee of human control.
-
-## **Development Roadmap**
-
-The development of Project Chimera is a 15+ year journey divided into three strategic phases.
-
-* **Phase 1 (Years 1-3): The Core Engine & Foundational Framework**  
-  * **Goal:** Prove the core technical viability of the architecture.  
-  * **Key Results:** TCC Validation, Core Innovation Prototypes (Mediator, SIE), MAE v1.0 (100+ agents) expanded from the [CodeMAD prototype](https://github.com/usemanusai/CodeMAD), and the DAO Beta Portal.  
-* **Phase 2 (Years 4-7): The Self-Governing Society**  
-  * **Goal:** Achieve a semi-autonomous, self-regulating AI society at scale.  
-  * **Key Results:** MAE Scalability (1,000s of agents), full Sovereign AI Government implementation, ASE v1.0 (semi-autonomous), and Active DAO Governance.  
-* **Phase 3 (Years 8-15+): The Perpetual Ecosystem**  
-  * **Goal:** Realize the full vision of a self-sustaining and robustly aligned AGI.  
-  * **Key Results:** Full Occupational Coverage (12,000+ agents), ASE v2.0 (near-autonomous), long-term system sustainability, and a mature governance model where the DAO acts as a "supreme court."
-
-## **How to Contribute**
-
-We welcome contributions from researchers, engineers, and ethicists. Please read our [CONTRIBUTING.md](http://docs.google.com/CONTRIBUTING.md) file for details on our code of conduct and the process for submitting pull requests.
-
-Key areas for contribution include:
-
-* Neuro-symbolic model development  
-* Causal inference research  
-* Decentralized governance protocols  
-* Ethical framework validation  
-* Large-scale system optimization
-
-## **Support and Funding**
-
-Project Chimera is a long-term, ambitious research and development initiative. Achieving our goal of a safe and beneficial AGI requires significant computational resources, dedicated engineering talent, and rigorous ethical oversight.
-
-We are actively seeking funding from individuals, foundations, and organizations who share our vision for a democratized and aligned AGI future. Your support will directly contribute to:
-
-* **Accelerating Core Research:** Advancing our work on the TCC, Differentiable Mediator, and SIE.  
-* **Scaling the Ecosystem:** Expanding the computational infrastructure needed to support the MAE.  
-* **Ensuring Ethical Alignment:** Funding independent audits and expanding the "Proof-of-Brain" expert network within our DAO.
-
-If you are interested in supporting Project Chimera, **please open a new Issue** in our cognitive-architecture-concept GitHub repository with the title "Funding Inquiry". We would be delighted to discuss potential partnerships.
-
-[**Click here to open a Funding Inquiry Issue**](https://github.com/Alex-Cipher-AI/cognitive-architecture-concept/issues/new?title=Funding+Inquiry&body=Please+describe+your+interest+in+funding+Project+Chimera.)
-
-## **License**
-
-This project is licensed under the [MIT License](http://docs.google.com/LICENSE.md) \- see the LICENSE.md file for details.
+The vision for the Project Chimera MAE is designed to expand upon this foundational work.
