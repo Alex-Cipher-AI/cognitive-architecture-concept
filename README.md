@@ -37,7 +37,7 @@ Its core premise is holistic integration: cognition, ethics, and governance are 
   ![AI Orchestrator Heatmap](./2.png)
 
 - ### ► [Live ACI Tools Management Dashboard](https://aci-tools-management-dashboard-zpw2m52.public.builtwithrocket.new)
-  Real-time catalog and management of **760 tools** from the local **Advanced Cognitive Infrastructure (ACI)** repository, available to the **12,000+ agents** to execute complex, specialized tasks.
+  Real-time catalog and management of **760+ tools** from the local **Advanced Cognitive Infrastructure (ACI)** repository, available to the **12,000+ agents** to execute complex, specialized tasks.
 
   ![ACI Tools Management Dashboard](./3.png)
 
